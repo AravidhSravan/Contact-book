@@ -1,0 +1,136 @@
+input
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    height: 45px;
+    width: 300px;
+}
+.contact1
+{
+  font-size: xx-large;
+}
+.save
+{
+    margin-left: 85px;
+    height: 35px;
+    margin-top: 8px;
+    width: 150px;
+}
+.container 
+{
+    margin-top: 8%;
+    border-radius: 5px;
+    position:absolute;
+    margin-left: 35%;
+}
+.contact2
+{
+    width: 23.5%;
+    height: 60%;
+    margin-top: 8%;
+    margin-left: 35%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto;
+    padding: 10px;
+    position: absolute;
+    overflow:auto;
+    overscroll-behavior: contain;
+    text-align: center;
+}
+.list_items
+{
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    display: flex;
+    border-radius: 40px;
+    line-height: 35px;
+}
+.addContact
+{
+    margin-top: 9%;
+    margin-left: 56%;
+    position: absolute;
+}
+@media only screen and (max-width: 450px) 
+{
+    .contact2
+    {
+      width: 90.5%;
+      height: 84%;
+      margin-top: 8%;
+      border-radius: 3.8%;
+      margin-left: 0.1%;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto;
+      padding: 10px;
+      position: absolute;
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+    .addContact
+    {
+      margin-top: 12%;
+      margin-left: 85%;
+      position: absolute;
+    }
+    .list_items
+    {
+      padding: 5px;
+      font-size: 14px;
+      text-align: center;
+      color: black;
+      justify-content: center;
+      display: flex;
+      border-radius: 40px;
+      line-height: 35px;
+    }
+    .container 
+    {
+      width: 96%;
+      height: 79%;
+      margin-top: 8%;
+      border-radius: 3.8%;
+      position:absolute;
+      margin-left: 0.1%;
+  }
+}
+  
+@media only screen and (min-width:500px) and (max-width:1250px) 
+{
+    .contact2
+    {
+      width: 61.5%;
+      height: 76%;
+      margin-top: 8%;
+      border-radius: 3.8%;
+      margin-left: 19%;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto;
+      padding: 10px;
+      position: absolute;
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+    .addContact
+    {
+      margin-top: 11%;
+      margin-left: 77%;
+      position: absolute;
+    }
+    .container 
+    {
+      width: 63%;
+      height: 89%;
+      margin-top: 9%;
+      border-radius: 3.8%;
+      position:absolute;
+      margin-left: 18%;
+    }
+}

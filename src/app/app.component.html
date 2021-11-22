@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Book</title>
+</head>
+<div>
+    <div *ngIf="isDialogOpen" class="container">
+        <p align="center" class="contact1">New Contact</p>
+        <div>
+            <input [(ngModel)]="name" type="text" placeholder="Enter Name"><br>
+            <input [(ngModel)]="email" type="text" placeholder="Enter email"><br>
+            <input [(ngModel)]="phno" type="number" placeholder="Enter Phone Number"><br>
+            <button (click)="addContacts()" class="save">Save Contact</button><br>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isDialogOpen" class="contact2">
+    <div style="text-align: center;font-size: x-large;">
+        <b>Contact-List</b>
+    </div>
+    <div class="list_items" *ngFor="let each of contacts ; let j = index">
+        <div display="block">
+            <div style="text-align: center;">
+                <span> Name: {{ each.name }}</span>
+            </div>
+        <div>
+        <span style="text-align: center"> Email: {{ each.email }}</span>
+    </div>
+        <div style="text-align: center">
+            <span> Phone no: {{ each.phoneNumber }}</span>
+        </div>
+</div>
+</div>
+<div>
+    <button (click)="addContact()" *ngIf="!isDialogOpen">Add</button>
+    <button (click)="addContact()" *ngIf="isDialogOpen">Add</button>
+</div>
+<router-outlet></router-outlet>
